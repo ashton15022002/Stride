@@ -50,10 +50,34 @@ export const Navbar = () => {
                   href="/services#service2"
                   className="text-sm font-semibold text-gray-700 hover:text-primary"
                 >
-                  Exchange
+                   Crypto Exchange
                 </Link>
                 <p className="text-xs text-gray-500">Make sites better with interactive menus.</p>
-              </div>
+              </div>             
+            </div>
+            <div className="flex items-center gap-4">
+              <img src="/src/images/stockexchange.png" alt="Exchange Icon" className="w-10 h-10 rounded-full" />
+              <div>
+                <Link
+                  href="/services#service2"
+                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                >
+                   Stock Exchange
+                </Link>
+                <p className="text-xs text-gray-500">Make sites better with interactive menus.</p>
+              </div>             
+            </div>
+            <div className="flex items-ce3nter gap-4">
+              <img src="/src/images/forex.png" alt="Exchange Icon" className="w-10 h-10 rounded-full" />
+              <div>
+                <Link
+                  href="/services#service2"
+                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                >
+                   Multi-Currency Account
+                </Link>
+                <p className="text-xs text-gray-500">Make sites better with interactive menus.</p>
+              </div>             
             </div>
             <div className="flex items-center gap-4">
               <img src="/src/images/banking.png" alt="Banking Icon" className="w-10 h-10 rounded-full" />
@@ -94,7 +118,49 @@ export const Navbar = () => {
           </div>
         );
 
-      case "Explore Our App":
+      case "Markets":
+        return (
+          <div className="flex flex-col gap-4 p-4 bg-white rounded-full">
+            <div className="flex items-center gap-4">
+              <img src="/src/images/feature1.png" alt="Feature 1 Icon" className="w-10 h-10 rounded-full" />
+              <div>
+                <Link
+                  href="/explore#feature1"
+                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                >
+                  Spot
+                </Link>
+                <p className="text-xs text-gray-500">Description for Feature 1.</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <img src="/src/images/feature2.png" alt="Feature 2 Icon" className="w-10 h-10 rounded-full" />
+              <div>
+                <Link
+                  href="/explore#feature2"
+                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                >
+                  Stocks
+                </Link>
+                <p className="text-xs text-gray-500">Description for Feature 2.</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <img src="/src/images/feature3.png" alt="Feature 3 Icon" className="w-10 h-10 rounded-full" />
+              <div>
+                <Link
+                  href="/explore#feature3"
+                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                >
+                  Forex
+                </Link>
+                <p className="text-xs text-gray-500">Description for Feature 3.</p>
+              </div>
+            </div>
+          </div>
+        );
+
+      case "Learn":
         return (
           <div className="flex flex-col gap-4 p-4 bg-white rounded-full">
             <div className="flex items-center gap-4">
@@ -135,6 +201,8 @@ export const Navbar = () => {
             </div>
           </div>
         );
+
+
 
       case "About Us":
         return (
@@ -226,12 +294,11 @@ export const Navbar = () => {
   };
 
   return (
-    <NextUINavbar className="bg-white" maxWidth="xl" position="sticky">
+    <NextUINavbar className="bg-black text-white" maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <Link
-            className="flex justify-start items-center gap-1"
-            color="foreground"
+            className="flex justify-start items-center gap-1 text-white"
             href="/"
           >
             <Logo />
@@ -253,8 +320,8 @@ export const Navbar = () => {
                   <Link
                     href={item.href}
                     className={clsx(
-                      linkStyles({ color: "foreground" }),
-                      "data-[active=true]:text-primary data-[active=true]:font-medium cursor-pointer"
+                      linkStyles({}),
+                      "data-[active=true]:text-primary data-[active=true]:font-medium cursor-pointer text-white"
                     )}
                     color="foreground"
                     onMouseEnter={() => setOpenPopoverIndex(index)}
@@ -279,18 +346,17 @@ export const Navbar = () => {
       <NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal href={siteConfig.links.twitter}>
-            <TwitterIcon className="text-default-500" />
+            <TwitterIcon className="text-white" />
           </Link>
           <Link isExternal href={siteConfig.links.discord}>
-            <DiscordIcon className="text-default-500" />
+            <DiscordIcon className="text-white" />
           </Link>
           <Link isExternal href={siteConfig.links.github}>
-            <GithubIcon className="text-default-500" />
+            <GithubIcon className="text-white" />
           </Link>
-          <ThemeSwitch />
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} href="/login" color="primary">
+          <Button as={Link} href="/login" color="primary" className="text-white">
             Log In
           </Button>
         </NavbarItem>
@@ -298,7 +364,7 @@ export const Navbar = () => {
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <Link isExternal href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
+          <GithubIcon className="text-white" />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />

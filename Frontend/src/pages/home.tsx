@@ -4,40 +4,56 @@ import { Link } from "@nextui-org/link";
 
 const Home: React.FC = () => {
   return (
-    <div className="px-6 py-8 space-y-16 bg-gray-50">
+    <div className="px-6 py-8 space-y-16 bg-[#131314]">
 
       {/* Hero Section */}
-      <section className="text-center bg-gradient-to-r from-blue-500 to-purple-600 text-white py-24 rounded-lg shadow-lg">
-        <h1 className="text-5xl font-extrabold mb-4">
-          ONE ACCOUNT FOR THE WORLD'S MONEY
+      <section 
+        className="flex flex-col justify-center items-center text-center text-white rounded-lg min-h-screen"
+        style={{ background: 'linear-gradient(134.15499077679797deg, #76339a 0%, #cf461d 100%)' }}
+      >
+        <h1 className="text-5xl font-extrabold mb-2">
+          A Unified Account For All Your Finances
         </h1>
-        <p className="text-xl mb-8">
-          Make your money work worldwide, for less. Send, spend and get paid. 40 currencies. All at your fingertips.
+        <p className="text-xl mb-10">
+         Send, spend and receive money from anywhere in the world. Infinite currencies. All at your fingertips.
         </p>
-        <Button as={Link} href="/open-account" color="primary" size="lg" className="hover:bg-blue-700">
+        <Button as={Link} href="/open-account" color="primary" size="lg" className="hover:bg-blue-700 mt-10">
           Open an account
-        </Button>
-        <Button as={Link} href="/send-money" color="secondary" size="lg" className="ml-4 hover:bg-purple-700">
-          Send money
         </Button>
       </section>
 
       {/* Feature Highlights */}
       <section className="flex flex-col lg:flex-row justify-between space-y-12 lg:space-y-0 lg:space-x-8">
         <div className="text-center bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-            Easy Crypto Exchange
+          <h2 className="text-3xl font-extrabold text-gray-800 mb-4">
+            Crypto Exchange
           </h2>
           <p className="text-lg text-gray-600">
             Trade your favorite cryptocurrencies with our user-friendly platform.
           </p>
         </div>
-        <div className="text-center bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+        <div className="text-center bg-blue-100 p-6 rounded-lg shadow-lg transform scale-105">
+          <h2 className="text-3xl font-extrabold text-gray-800 mb-4">
             Secure Wallet
           </h2>
           <p className="text-lg text-gray-600">
             Keep your assets safe with our top-notch security protocols.
+          </p>
+        </div>
+        <div className="text-center bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+            Stocks
+          </h2>
+          <p className="text-lg text-gray-600">
+            Access live market data to stay ahead of the trends.
+          </p>
+        </div>
+        <div className="text-center bg-white p-6 rounded-lg shadow-md">
+          <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+            Multi-Currency Account
+          </h2>
+          <p className="text-lg text-gray-600">
+            Access live market data to stay ahead of the trends.
           </p>
         </div>
         <div className="text-center bg-white p-6 rounded-lg shadow-md">
