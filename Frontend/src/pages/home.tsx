@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from "@nextui-org/button";
+import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
 import { Link } from "@nextui-org/link";
 
 const Home: React.FC = () => {
@@ -18,52 +18,60 @@ const Home: React.FC = () => {
          Send, spend and receive money from anywhere in the world. Infinite currencies. All at your fingertips.
         </p>
         <Button as={Link} href="/open-account" color="primary" size="lg" className="hover:bg-blue-700 mt-10">
-          Open an account
+          Open an account  
         </Button>
       </section>
 
       {/* Feature Highlights */}
-      <section className="flex flex-col lg:flex-row justify-between space-y-12 lg:space-y-0 lg:space-x-8">
-        <div className="text-center bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-3xl font-extrabold text-gray-800 mb-4">
-            Crypto Exchange
-          </h2>
-          <p className="text-lg text-gray-600">
-            Trade your favorite cryptocurrencies with our user-friendly platform.
-          </p>
-        </div>
-        <div className="text-center bg-blue-100 p-6 rounded-lg shadow-lg transform scale-105">
-          <h2 className="text-3xl font-extrabold text-gray-800 mb-4">
-            Secure Wallet
-          </h2>
-          <p className="text-lg text-gray-600">
-            Keep your assets safe with our top-notch security protocols.
-          </p>
-        </div>
-        <div className="text-center bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-            Stocks
-          </h2>
-          <p className="text-lg text-gray-600">
-            Access live market data to stay ahead of the trends.
-          </p>
-        </div>
-        <div className="text-center bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-            Multi-Currency Account
-          </h2>
-          <p className="text-lg text-gray-600">
-            Access live market data to stay ahead of the trends.
-          </p>
-        </div>
-        <div className="text-center bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-            Real-Time Market Data
-          </h2>
-          <p className="text-lg text-gray-600">
-            Access live market data to stay ahead of the trends.
-          </p>
-        </div>
+      <section className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-8">
+        <Card className="h-[500px] w-[400px] ">
+          <CardHeader className="absolute z-10 top-1 flex-col !items-start">
+            <p className="text-tiny text-white/60 uppercase font-bold">Crypto Exchange</p>
+            <h4 className="text-white font-medium text-large">Trade your favorite cryptocurrencies</h4>
+          </CardHeader>
+          <Image
+            removeWrapper
+            alt="Crypto Exchange"
+            className="z-0 w-full h-full object-cover"
+            src="https://nextui.org/images/card-example-4.jpeg"
+          />
+        </Card>
+        <Card className="h-[500px] w-[400px]">
+          <CardHeader className="absolute z-10 top-1 flex-col !items-start">
+            <p className="text-tiny text-white/60 uppercase font-bold">Secure Wallet</p>
+            <h4 className="text-white font-medium text-large">Keep your assets safe</h4>
+          </CardHeader>
+          <Image
+            removeWrapper
+            alt="Secure Wallet"
+            className="z-0 w-full h-full object-cover"
+            src="https://nextui.org/images/card-example-3.jpeg"
+          />
+        </Card>
+        <Card className="h-[500px] w-[400px]">
+          <CardHeader className="absolute z-10 top-1 flex-col !items-start">
+            <p className="text-tiny text-white/60 uppercase font-bold">Multi-Currency Account</p>
+            <h4 className="text-white font-medium text-large">Access live market data</h4>
+          </CardHeader>
+          <Image
+            removeWrapper
+            alt="Multi-Currency Account"
+            className="z-0 w-full h-full object-cover"
+            src="https://nextui.org/images/card-example-2.jpeg"
+          />
+        </Card>
+        <Card className="h-[500px] w-[400px]">
+          <CardHeader className="absolute z-10 top-1 flex-col !items-start">
+            <p className="text-tiny text-white/60 uppercase font-bold">Real-Time Market Data</p>
+            <h4 className="text-white font-medium text-large">Stay ahead of the trends</h4>
+          </CardHeader>
+          <Image
+            removeWrapper
+            alt="Real-Time Market Data"
+            className="z-0 w-full h-full object-cover"
+            src="https://nextui.org/images/card-example-5.jpeg"
+          />
+        </Card>
       </section>
 
       {/* Customer Testimonials */}
