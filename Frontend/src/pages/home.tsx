@@ -23,8 +23,8 @@ const Home: React.FC = () => {
       </section>
 
       {/* Feature Highlights */}
-      <section className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-8">
-        <Card className="h-[500px] w-[400px] ">
+      <section className="max-w-[1400px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-8">
+        <Card className="h-[425px] w-[300px] ">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
             <p className="text-tiny text-white/60 uppercase font-bold">Crypto Exchange</p>
             <h4 className="text-white font-medium text-large">Trade your favorite cryptocurrencies</h4>
@@ -36,7 +36,7 @@ const Home: React.FC = () => {
             src="https://nextui.org/images/card-example-4.jpeg"
           />
         </Card>
-        <Card className="h-[500px] w-[400px]">
+        <Card className="h-[425px] w-[300px]">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
             <p className="text-tiny text-white/60 uppercase font-bold">Secure Wallet</p>
             <h4 className="text-white font-medium text-large">Keep your assets safe</h4>
@@ -48,7 +48,7 @@ const Home: React.FC = () => {
             src="https://nextui.org/images/card-example-3.jpeg"
           />
         </Card>
-        <Card className="h-[500px] w-[400px]">
+        <Card className="h-[425px] w-[300px]">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
             <p className="text-tiny text-white/60 uppercase font-bold">Multi-Currency Account</p>
             <h4 className="text-white font-medium text-large">Access live market data</h4>
@@ -60,7 +60,7 @@ const Home: React.FC = () => {
             src="https://nextui.org/images/card-example-2.jpeg"
           />
         </Card>
-        <Card className="h-[500px] w-[400px]">
+        <Card className="h-[425px] w-[300px]">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
             <p className="text-tiny text-white/60 uppercase font-bold">Real-Time Market Data</p>
             <h4 className="text-white font-medium text-large">Stay ahead of the trends</h4>
