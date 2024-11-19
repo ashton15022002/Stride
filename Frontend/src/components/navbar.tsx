@@ -30,17 +30,17 @@ export const Navbar = () => {
     switch (label) {
       case "Our Services":
         return (
-          <div className="flex flex-col gap-4 p-4 bg-white rounded-full">
+          <div className="flex flex-col gap-4 p-4 bg-black text-white">
             <div className="flex items-center gap-4">
               <img src="/src/images/deposit.png" alt="Deposit Icon" className="w-10 h-10 rounded-full" />
               <div>
                 <Link
                   href="/services#service1"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Deposit
                 </Link>
-                <p className="text-xs text-gray-500">Make sites better with interactive menus.</p>
+                <p className="text-xs">Make sites better with interactive menus.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -48,35 +48,23 @@ export const Navbar = () => {
               <div>
                 <Link
                   href="/services#service2"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                    Crypto Exchange
                 </Link>
-                <p className="text-xs text-gray-500">Make sites better with interactive menus.</p>
+                <p className="text-xs">Make sites better with interactive menus.</p>
               </div>             
             </div>
             <div className="flex items-center gap-4">
-              <img src="/src/images/stockexchange.png" alt="Exchange Icon" className="w-10 h-10 rounded-full" />
-              <div>
-                <Link
-                  href="/services#service2"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
-                >
-                   Stock Exchange
-                </Link>
-                <p className="text-xs text-gray-500">Make sites better with interactive menus.</p>
-              </div>             
-            </div>
-            <div className="flex items-ce3nter gap-4">
               <img src="/src/images/forex.png" alt="Exchange Icon" className="w-10 h-10 rounded-full" />
               <div>
                 <Link
                   href="/services#service2"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                    Multi-Currency Account
                 </Link>
-                <p className="text-xs text-gray-500">Make sites better with interactive menus.</p>
+                <p className="text-xs">Make sites better with interactive menus.</p>
               </div>             
             </div>
             <div className="flex items-center gap-4">
@@ -84,11 +72,11 @@ export const Navbar = () => {
               <div>
                 <Link
                   href="/services#service3"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Banking
                 </Link>
-                <p className="text-xs text-gray-500">Make sites better with interactive menus.</p>
+                <p className="text-xs">Make sites better with interactive menus.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -96,11 +84,11 @@ export const Navbar = () => {
               <div>
                 <Link
                   href="/services#service4"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Stride Card
                 </Link>
-                <p className="text-xs text-gray-500">Make sites better with interactive menus.</p>
+                <p className="text-xs">Make sites better with interactive menus.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -108,11 +96,11 @@ export const Navbar = () => {
               <div>
                 <Link
                   href="/services#service5"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Save & Stake
                 </Link>
-                <p className="text-xs text-gray-500">Make sites better with interactive menus.</p>
+                <p className="text-xs">Make sites better with interactive menus.</p>
               </div>
             </div>
           </div>
@@ -120,17 +108,17 @@ export const Navbar = () => {
 
       case "Markets":
         return (
-          <div className="flex flex-col gap-4 p-4 bg-white rounded-full">
+          <div className="flex flex-col gap-4 p-4 bg-black text-white">
             <div className="flex items-center gap-4">
               <img src="/src/images/feature1.png" alt="Feature 1 Icon" className="w-10 h-10 rounded-full" />
               <div>
                 <Link
                   href="/explore#feature1"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Spot
                 </Link>
-                <p className="text-xs text-gray-500">Description for Feature 1.</p>
+                <p className="text-xs">Description for Feature 1.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -138,11 +126,11 @@ export const Navbar = () => {
               <div>
                 <Link
                   href="/explore#feature2"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Stocks
                 </Link>
-                <p className="text-xs text-gray-500">Description for Feature 2.</p>
+                <p className="text-xs">Description for Feature 2.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -150,11 +138,11 @@ export const Navbar = () => {
               <div>
                 <Link
                   href="/explore#feature3"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Forex
                 </Link>
-                <p className="text-xs text-gray-500">Description for Feature 3.</p>
+                <p className="text-xs">Description for Feature 3.</p>
               </div>
             </div>
           </div>
@@ -162,17 +150,17 @@ export const Navbar = () => {
 
       case "Learn":
         return (
-          <div className="flex flex-col gap-4 p-4 bg-white rounded-full">
+          <div className="flex flex-col gap-4 p-4 bg-black text-white">
             <div className="flex items-center gap-4">
               <img src="/src/images/feature1.png" alt="Feature 1 Icon" className="w-10 h-10 rounded-full" />
               <div>
                 <Link
                   href="/explore#feature1"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Feature 1
                 </Link>
-                <p className="text-xs text-gray-500">Description for Feature 1.</p>
+                <p className="text-xs">Description for Feature 1.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -180,11 +168,11 @@ export const Navbar = () => {
               <div>
                 <Link
                   href="/explore#feature2"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Feature 2
                 </Link>
-                <p className="text-xs text-gray-500">Description for Feature 2.</p>
+                <p className="text-xs">Description for Feature 2.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -192,31 +180,29 @@ export const Navbar = () => {
               <div>
                 <Link
                   href="/explore#feature3"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Feature 3
                 </Link>
-                <p className="text-xs text-gray-500">Description for Feature 3.</p>
+                <p className="text-xs">Description for Feature 3.</p>
               </div>
             </div>
           </div>
         );
 
-
-
       case "About Us":
         return (
-          <div className="flex flex-col gap-4 p-4 bg-white rounded-full">
+          <div className="flex flex-col gap-4 p-4 bg-black text-white">
             <div className="flex items-center gap-4">
               <img src="/src/images/mission.png" alt="Our Mission Icon" className="w-10 h-10 rounded-full" />
               <div>
                 <Link
                   href="/about#our-mission"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Our Mission
                 </Link>
-                <p className="text-xs text-gray-500">Description for Our Mission.</p>
+                <p className="text-xs">Description for Our Mission.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -224,11 +210,11 @@ export const Navbar = () => {
               <div>
                 <Link
                   href="/about#our-team"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Our Team
                 </Link>
-                <p className="text-xs text-gray-500">Description for Our Team.</p>
+                <p className="text-xs">Description for Our Team.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -236,11 +222,11 @@ export const Navbar = () => {
               <div>
                 <Link
                   href="/about#contact"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Contact Us
                 </Link>
-                <p className="text-xs text-gray-500">Description for Contact Us.</p>
+                <p className="text-xs">Description for Contact Us.</p>
               </div>
             </div>
           </div>
@@ -248,17 +234,17 @@ export const Navbar = () => {
 
       case "Get Help":
         return (
-          <div className="flex flex-col gap-4 p-4 bg-white rounded-full">
+          <div className="flex flex-col gap-4 p-4 bg-black text-white">
             <div className="flex items-center gap-4">
               <img src="/src/images/support.png" alt="Support Icon" className="w-10 h-10 rounded-full" />
               <div>
                 <Link
                   href="/help#support"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Support
                 </Link>
-                <p className="text-xs text-gray-500">Description for Support.</p>
+                <p className="text-xs">Description for Support.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -266,11 +252,11 @@ export const Navbar = () => {
               <div>
                 <Link
                   href="/help#faq"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   FAQ
                 </Link>
-                <p className="text-xs text-gray-500">Description for FAQ.</p>
+                <p className="text-xs">Description for FAQ.</p>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -278,11 +264,11 @@ export const Navbar = () => {
               <div>
                 <Link
                   href="/help#feedback"
-                  className="text-sm font-semibold text-gray-700 hover:text-primary"
+                  className="text-sm font-semibold hover:text-primary"
                 >
                   Feedback
                 </Link>
-                <p className="text-xs text-gray-500">Description for Feedback.</p>
+                <p className="text-xs">Description for Feedback.</p>
               </div>
             </div>
           </div>
@@ -331,7 +317,7 @@ export const Navbar = () => {
                   </Link>
                 </PopoverTrigger>
                 <PopoverContent
-                  className="bg-white shadow-lg rounded-lg w-80"
+                  className="bg-black shadow-lg rounded-lg w-80"
                   onMouseEnter={() => setOpenPopoverIndex(index)}
                   onMouseLeave={() => setOpenPopoverIndex(null)}
                 >
