@@ -74,16 +74,6 @@ const Home: React.FC = () => {
         </Card>
       </section>
 
-      {/* Customer Testimonials */}
-      <section className="text-center bg-gray-100 py-16 rounded-lg shadow-lg">
-        <h2 className="text-4xl font-bold text-gray-800 mb-8">
-          What Our Users Say
-        </h2>
-        <blockquote className="text-xl text-gray-600 italic mb-4">
-          "Stride has revolutionized the way I trade crypto. The interface is intuitive, and I love the security features."
-        </blockquote>
-        <p className="text-lg text-gray-600">- Jane Doe, Crypto Enthusiast</p>
-      </section>
 
       {/* Security and Trust */}
       <section className="text-center py-16">
